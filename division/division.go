@@ -51,6 +51,14 @@ func DefineDivision(args []string) (div Division) {
 				owen:     0.05,
 				lola:     0.95,
 			}
+		case "website-no-donation":
+			div = Division{
+				donation: 0,
+				cashflow: 0.1,
+				joint:    0.15,
+				owen:     0.6,
+				lola:     0.4,
+			}
 		default:
 			fmt.Println("Please provide a valid preset or no preset at all")
 			div = Division{}
